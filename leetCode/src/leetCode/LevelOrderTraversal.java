@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class LevelOrderTraversal {
 	public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
-		ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-		ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 		traversal(root, 1, list);
 		for (int i = list.size()-1; i >=0; i--) {
 			result.add(list.get(i));
@@ -18,7 +18,7 @@ public class LevelOrderTraversal {
 		if (root == null) {
 			return;
 		}
-		ArrayList<Integer> tmp = new ArrayList<>();
+		ArrayList<Integer> tmp = new ArrayList<Integer>();
 		if (level > list.size()) {
 			list.add(tmp);
 		}

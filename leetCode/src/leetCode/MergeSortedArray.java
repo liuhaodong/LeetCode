@@ -9,7 +9,7 @@ public class MergeSortedArray {
 		}
         int i = 0;
         int j = 0;
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         while(i<m && j < n){
         	if (A[i]< B[j]) {
 				list.add(A[i]);

@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class RomanToNum {
 	public int romanToInt(String s) {
-		HashMap<Character, Integer> roman = new HashMap<>();
+		HashMap<Character, Integer> roman = new HashMap<Character, Integer>();
 		roman.put('I', 1);
 		roman.put('V', 5);
 		roman.put('X', 10);

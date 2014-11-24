@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class PascalTriangle {
     public ArrayList < ArrayList<Integer>> generate(int numRows) {
-    	ArrayList < ArrayList<Integer>> list = new ArrayList<>();
+    	ArrayList < ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
     	if (numRows == 0) {
 			return list;
 		}
     	
-    	ArrayList<Integer> row1 = new ArrayList<>();
-    	ArrayList<Integer> row2 = new ArrayList<>();
-    	ArrayList<Integer> row3 = new ArrayList<>();
+    	ArrayList<Integer> row1 = new ArrayList<Integer>();
+    	ArrayList<Integer> row2 = new ArrayList<Integer>();
+    	ArrayList<Integer> row3 = new ArrayList<Integer>();
     	row1.add(1);
     	row2.add(1);
     	row2.add(1);
@@ -24,7 +24,7 @@ public class PascalTriangle {
 			return list;
 		}
     	for (int i = 3; i <= numRows; i++) {
-			ArrayList<Integer> tmp = new ArrayList<>();
+			ArrayList<Integer> tmp = new ArrayList<Integer>();
 			tmp.add(1);
 			int j = 1;
 			while(j<i-1){
